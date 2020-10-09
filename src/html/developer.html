@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<!--Header Settings-->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Title shown on the top of the App window-->
+    <title>QC</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       
+    <!--Import Style.css-->
+    <link rel="stylesheet" type="text/css" href="../css/info.css">
+
+
+    <!--Import Javascript Function-->
+    <script src="../js/inforender.js"></script>
+
+    <style>
+        /*Check active button*/
+        .coolbuttonlocation{
+        position:absolute;
+        bottom:140px;
+        right:35px;
+        }
+        .coolbutton {
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            background: #1c33fd;
+            color: #ffffff !important;
+            font-weight: 100;
+            padding: 20px;
+            text-transform: uppercase;
+            border-radius: 6px;
+            display: inline-block;
+            transition: all 0.3s ease 0s;
+        }
+        .coolbutton:hover {
+            color: #2380fa !important;
+            font-weight: 700 !important;
+            letter-spacing: 3px;
+            background: none;
+            -webkit-box-shadow: 0px 5px 40px -10px rgb(0, 247, 255);
+            -moz-box-shadow: 0px 5px 40px -10px rgb(0, 247, 255);
+            transition: all 0.3s ease 0s;
+        }
+
+        .rainbow-text {
+          background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+
+        p, h2, h3, h4 {
+          font-size: 20px;
+          white-space: nowrap;
+
+          
+          background: -webkit-linear-gradient( 92deg, #95d7e3, #eb76ff );
+          background-size:600vw 600vw;
+          
+          
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: textAnimate 5s linear infinite alternate;
+        }
+
+
+        @keyframes textAnimate {
+          from {
+            filter: hue-rotate(0deg);
+            background-position-x: 0%;
+            
+          }
+          to {
+            filter: hue-rotate(360deg);
+            background-position-x: 600vw;
+            
+          }
+        }
+
+        .center
+        {
+          position: absolute;
+          top: 50%;
+          left: 45%;
+          transform: translate(-50%, -50%);
+        }
+    </style>
+  </head>
+  
+
+<!--Starting of Body-->
+  <body>
+
+    <!--Side Navigation Bar-->
+    <div class="navigation">
+      <ul>
+        
+        <li>
+          <a href="../index.html">
+            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+            <span class="title">Home</span>
+          </a>
+        </li>
+
+        <li>
+            <a href="./Info.html">
+              <span class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></span>
+              <span class="title">PC Info</span>
+            </a>
+        </li>
+
+        <li>
+          <a href="./bench.html">
+            <span class="icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+            <span class="title">BenchMark</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="./install.html">
+            <span class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+            <span class="title">Essential Install</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="./qc.html">
+            <span class="icon"><i class="fa fa-archive" aria-hidden="true"></i></span>
+            <span class="title">QC</One-for-All></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="./dev.html">
+            <span class="icon"><i class="fa fa-cloud-upload" aria-hidden="true"></i></span>
+            <span class="title">Upload Data</span>
+          </a>
+        </li>
+        <li>
+            <a href="#">
+              <span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+              <span class="title">Developer</span>
+            </a>
+          </li>
+
+      </ul>
+    </div>  
+
+
+    <!--The Main Part of Body-->
+    <main style="align-items: center;text-align: center;" class="myDiv">
+      
+        <h2>This App is Done by 9Guest</h2>
+        <h3>If you have any query on this APP or you find bugs in this APP</h3>
+        <h4>You may contact <span style="text-decoration: underline; color: rgb(0, 195, 255);">9guest@engineering.org</span></h4>
+
+    </main><!--End of Main-->
+
+        <div style="position: absolute; bottom: 0; right: 3%;"  id="loading">
+          <img src="../pics/ripload.svg" alt="Loading">
+        </div>
+    
+        <div class="con" style="position: absolute; right: 3%;bottom: 3%;">
+        
+        <p>🔔 You "may" contact</p>
+        </div>
+
+    
+  </body><!--End of Body-->
+
+</html><!--End of HTML Content-->

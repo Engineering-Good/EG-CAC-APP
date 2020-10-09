@@ -1,0 +1,17 @@
+directories:
+  output: dist
+  buildResources: build
+appId: egproject
+win:
+  target:
+    - nsis
+  icon: src/icon.ico
+  requestedExecutionLevel: requireAdministrator
+nsis:
+  installerIcon: src/icon.ico
+  uninstallerIcon: src/icon.ico
+  uninstallDisplayName: EG CAC APP Uninstaller
+  license: license.txt
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+electronVersion: 10.1.3

@@ -1,0 +1,179 @@
+<html>
+
+    <head>
+        <!--Title of the window-->
+        <title>PC Info</title>
+        
+        <!--The style of this HTML page [9Guest is too lazy to write style.css and import it]-->
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+                *
+                {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                }
+
+                body{
+                min-height: 100vh;
+                background: #261a29;  
+                overflow: hidden;
+                
+                }
+
+                main 
+                {
+                color: cornsilk;
+                }
+                h2{
+                    color: #d166ff;
+                }
+
+                .myDiv {
+                    white-space: nowrap;
+                    text-align: center;
+                }
+                
+                .center{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .infodiv span{
+                    color: mediumspringgreen;
+                }
+               
+                /*Check active button*/
+                .checkactivebutton{
+                    position:absolute;
+                    bottom:140px;
+                    right:35px;
+                    
+                }
+                .example_activebutton {
+                    font-family: 'Poppins', sans-serif;
+                    border: none;
+                    background: #2380fa;
+                    color: #ffffff !important;
+                    font-weight: 100;
+                    padding: 20px;
+                    text-transform: uppercase;
+                    border-radius: 6px;
+                    display: inline-block;
+                    transition: all 0.3s ease 0s;
+                }
+                .example_activebutton:hover {
+                    color: #2380fa !important;
+                    font-weight: 700 !important;
+                    letter-spacing: 3px;
+                    background: none;
+                    -webkit-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
+                    -moz-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
+                    transition: all 0.3s ease 0s;
+                }
+                
+                /*get info button*/
+                .getinfobutton{
+                    position:absolute;
+                    bottom:50px;
+                    right: 35px;
+                    
+                }
+                .example_infobutton {
+                    font-family: 'Poppins', sans-serif;
+                    border: none;
+                    background: #7523fa;
+                    color: #ffffff !important;
+                    font-weight: 10;
+                    padding: 20px;
+                    text-transform: uppercase;
+                    border-radius: 6px;
+                    display: inline-block;
+                    transition: all 0.3s ease 0s;
+                }
+                .example_infobutton:hover {
+                    color : #7523fa !important;
+                    font-weight: 700 !important;
+                    letter-spacing: 3px;
+                    background: none;
+                    -webkit-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
+                    -moz-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
+                    transition: all 0.3s ease 0s;
+                }
+
+                /*powershell button*/
+                .powersbutton{
+                    position:absolute;
+                    bottom:230px;
+                    right: 35px;
+                    
+                }
+                .example_powers {
+                    font-family: 'Poppins', sans-serif;
+                    border: none;
+                    background: #5c23fa;
+                    color: #ffffff !important;
+                    font-weight: 10;
+                    padding: 20px;
+                    text-transform: uppercase;
+                    border-radius: 6px;
+                    display: inline-block;
+                    transition: all 0.3s ease 0s;
+                }
+                .example_powers:hover {
+                    color : #7523fa !important;
+                    font-weight: 700 !important;
+                    letter-spacing: 3px;
+                    background: none;
+                    -webkit-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
+                    -moz-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
+                    transition: all 0.3s ease 0s;
+                }
+            </style>
+            
+        <!--Import Javascript to the page-->
+        <script src="../js/pcInfo.js"></script>
+    </head>
+
+    <body>
+        <main>
+
+            <div class="powersbutton">
+                <a class="example_powers" onclick="runexec();">PowerShell</a>
+            </div>
+
+            <div class="checkactivebutton">
+                <a class="example_activebutton" onclick="runpowershell();">PC Activation</a>
+            </div>
+
+            <div class="getinfobutton">
+                
+                <a class="example_infobutton" onclick="returnCPU();">PC Infomation</a>
+            </div>
+
+            <div class="center" hidden = "true" id="loading">
+                <img src="../pics/ripload.svg" alt="Loading">
+            </div>
+            <!--Div for Showing Info-->
+            <div style="padding: 2rem;" class="infodiv" id="infodiv" hidden="true">
+                <p>PC: &nbsp;<span id="system">-</span></p>
+                <p>CPU: &nbsp;<span id="cpu">-</span></p>
+                <p>Memory: &nbsp;<span id="memory">-</span></p>
+                <p>BIOS: &nbsp;<span id="bios">-</span></p>
+                <p>Motherboard: &nbsp;<span id="motherboard">-</span></p>
+                <br>
+                <p>Graphics: &nbsp;<br><span id="graphics">-</span></p>
+                <br>
+                <p>Battery Info: &nbsp;<br>Presence of Battery: <span id="batterypresence">-</span>
+                    <br>Is Charging?: &nbsp;<span id="ischarging">-</span>
+                    <br>Charged Level: &nbsp;<span id="percent">-</span>
+                </p>
+                <br>
+                <p>Partition:<br><span id="partition">-</span></p>
+            </div>
+        </main>
+    </body>
+</html>
