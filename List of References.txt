@@ -1,0 +1,29 @@
+======== List Of References ===============
+
+1) https://www.youtube.com/watch?v=DvpSKoCyN5Q
+
+2) https://www.electronjs.org/docs
+
+3) https://fontawesome.com/v4.7.0/icons/
+
+4) https://fontawesome.com/v4.7.0/
+
+5) https://www.youtube.com/watch?v=MiPpQzW_ya0
+
+6) https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/
+
+7) https://www.youtube.com/watch?v=5cx-ZjawL6Q
+
+8) https://loading.io/
+
+9) https://www.npmjs.com/package/systeminformation
+
+10) https://stackoverflow.com/questions/1809494/post-unchecked-html-checkboxes
+
+11) https://docs.google.com/spreadsheets/d/1ZkU8vAKap_XS0csLOjokq9RKeIeiru1G9M-DvT8OuQU/edit?usp=sharing
+
+12) https://eg9guest.github.io/
+
+13) https://medium.com/@lovespreadsheets/save-web-html-form-data-to-google-sheets-47e48f7517e6
+
+14) https://www.apispreadsheets.com/upload
