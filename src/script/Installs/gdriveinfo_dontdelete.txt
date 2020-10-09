@@ -1,0 +1,13 @@
+client id
+418256764249-lv1r71ok8q62m0dttdqff8lmnvht4kkg.apps.googleusercontent.com
+client secret
+wJZEpdwZiXWaQDqzfBZwvQim
+
+
+{
+  "access_token": "ya29.a0AfH6SMBWPZakBzHjf04fYfZpLSi9pGoB0fK7KZtqRGQGXXTma3e9XXoJDabL9xh4oIdnk0Ahu7XHG7tGXJ5-C33b7LPbIIgXJP13mHjfbpL-7htKKhQQkVQD4s9EJGV_hFrPLZEthJfQv5_T3nf5gQkoTSR5sOe6zEE", 
+  "scope": "https://www.googleapis.com/auth/drive", 
+  "token_type": "Bearer", 
+  "expires_in": 3599, 
+  "refresh_token": "1//0fONxwhKN3xj7CgYIARAAGA8SNwF-L9IrOd2-JNVNjaxuIL9GOex9VHUnZ7HB5_v0DbnbKYBl-GOsjldWLmpny-LLZgavgbuhYTk"
+}
